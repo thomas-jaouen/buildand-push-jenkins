@@ -1,6 +1,6 @@
 node {
    def PROJET="thomas-forma/app:3.5"
-   def IMAGE=$PROJET
+   def IMAGE="$PROJET"
    
     stage('Clone') {
           checkout scm
