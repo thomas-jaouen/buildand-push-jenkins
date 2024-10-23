@@ -17,7 +17,7 @@ node {
     }
 
     stage('Push') {
-       docker.withRegistry('https://registry.ludovic.io/' , 'user') {
+       docker.withRegistry('https://registry.ludovic.io/' , 'thomas') {
               img.push 'latest'
               img.push()
           }
